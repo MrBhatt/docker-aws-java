@@ -14,4 +14,4 @@ RUN apt-get update && apt-get install -y vim \
 RUN mkdir ~/workdir
 WORKDIR ~/workdir
 RUN wget https://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip
-RUN unzip aws-java-sdk.zip
+RUN unzip aws-java-sdk.zip && rm aws-java-sdk.zip
